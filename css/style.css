@@ -1,0 +1,102 @@
+@font-face {
+  font-family: Chinese Rocks Bold Cyrillic;
+  src: url(../font/Chinese_Rocks_Bold_Cyrillic.ttf);
+}
+@font-face{
+  font-family: Saffron Cyr;
+  src: url(../font/Saffron_Cyr.ttf);
+}
+@font-face{
+  font-family: Rurintania;
+  src: url(../font/Rurintania.ttf);
+}
+@font-face{
+  font-family: Sevilla Decor;
+  src: url(../font/Sevilla_Decor.ttf);
+}
+html {
+background-image: url(../images/firstscreen.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.face{
+  font-family: "Chinese Rocks Bold Cyrillic";
+  margin-left: auto;
+  margin-right: auto;
+  width: center;
+  text-align: center;
+  color: #7196d1;
+  font-size: 150px;
+  position: relative;
+  margin-top: 200pt;
+  line-height: 1.64;
+}
+
+.navbar:hover {
+  display: flex;
+  position: sticky;
+  top: 1900px;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-image: url(../images/kuv.jpg);
+  background-size: 100%;
+  background-color: #f5d442;
+  padding-top: 11.25pt;
+  padding-bottom: 11.25pt;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 18.75pt;
+  border: 1mm solid white;
+  width: 315px;
+  height: 60px;
+  margin-top: 187.5pt;
+}
+.navbar a:hover {
+  font-family: "Sevilla Decor";
+  text-decoration: none;
+  font-size: 36px;
+  color: #f7fcf8;
+}
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 1900px;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-image: url(../images/kuv.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #348558;
+  padding-top: 11.25pt;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 11.25pt;
+  border-radius: 18.75pt;
+  width:225pt;
+  border: 1mm solid white;
+  transition: all 0.6s cubic-bezier(.33,.49,.72,.56);
+  margin-top: 187.5pt;
+}
+.navbar a {
+  font-family: "Sevilla Decor";
+  text-decoration: none;
+  font-size: 36px;
+  color: #f7fcf8;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  margin-left: 3.75pt;
+}
