@@ -19,7 +19,7 @@
   src: url(../font/Caviar_Dreams.ttf);
 }
 html {
-background-image: url(../images/sacondscreen.jpg);
+background-image: src="images/sacondscreen.jpg";
 background-repeat: no-repeat;
 background-position: center center;
 background-attachment: fixed;
