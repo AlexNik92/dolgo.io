@@ -132,3 +132,9 @@ article {
 .g:hover + article {
   filter: blur(3px);
 }
+
+.comm {
+  position: relative;
+  top: 500px;
+  width: 900px;
+}
