@@ -15,7 +15,7 @@
   src: url(../font/Sevilla_Decor.ttf);
 }
 html {
-background-image: url(../images/firstscreen.jpg);
+background-image: url(../images/firstscreen.JPG);
 background-repeat: no-repeat;
 background-position: center center;
 background-attachment: fixed;
@@ -45,7 +45,7 @@ background-size: cover;
   align-content: center;
   align-items: center;
   flex-direction: row;
-  background-image: url(../images/kuv.jpg);
+  background-image: url(../images/kuv.JPG);
   background-size: 100%;
   background-color: #f5d442;
   padding-top: 11.25pt;
@@ -72,7 +72,7 @@ background-size: cover;
   align-content: center;
   align-items: center;
   flex-direction: row;
-  background-image: url(../images/kuv.jpg);
+  background-image: url(../images/kuv.JPG);
   background-size: 100%;
   background-repeat: no-repeat;
   background-color: #348558;
