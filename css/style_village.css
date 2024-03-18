@@ -137,4 +137,6 @@ article {
   position: relative;
   top: 500px;
   width: 900px;
+  background-color: #FFFFFF;
+  opacity: 0.50;
 }
