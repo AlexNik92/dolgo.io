@@ -33,6 +33,7 @@ header {
   top: 10px;
   left: 40px;
 }
+
 .home_page a {
   font-family: "Chinese Rocks Bold Cyrillic";
   text-decoration: none;
@@ -40,6 +41,7 @@ header {
   font-size: 45px;
   line-height: 1;
 }
+
 .home_page a:hover {
   color: #947d32;
   text-decoration: underline;
