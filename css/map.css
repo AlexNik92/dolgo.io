@@ -69,6 +69,19 @@ img {
     height: auto;
 }
 
+.village_title a {
+  font-family: "Chinese Rocks Bold Cyrillic";
+  text-decoration: none;
+  color: #e68525;
+  font-size: 35px;
+  line-height: 1;
+}
+
+.village_title a:hover {
+  color: #d61532;
+  text-decoration: underline;
+}
+
 .wrapper {
   height: 100vh;
   width: 80%;
@@ -118,7 +131,7 @@ img {
 }
 
 .back {
-  background-image: url(../images/card_dolg.JPG);
+  background: linear-gradient(#358525, #4edec6);
   transform: perspective(600px) rotateY(180deg);
   display: flex;
   align-items: center;
@@ -129,6 +142,12 @@ img {
     color: #FFF;
     font-size: 20px;
 }
+
+.back  span {
+    color: #FFF;
+    font-size: 16px;
+}
+
 .back h1 span {
       display: block;
       font-size: 18px;
