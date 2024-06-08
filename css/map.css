@@ -38,38 +38,21 @@ background-attachment: fixed;
 background-size: cover;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1920px) {
+
   header {
   position: fixed;
-  top: 20px;
+  top: 30px;
   left: 40px;
-}
-}
+  }
 
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  header {
-  position: fixed;
-  top: 20px;
-  left: 40px;
-}
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  header {
-  position: fixed;
-  top: 15px;
-  left: 40px;
-}
-}
-
-@media (max-width: 480px) {
-  header {
-  position: static;
-  margin-top: 20px;
-  margin-left: 20px;
-  /* margin: 1.5%; */
-}
+  .wrapper {
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
 }
 
 .home_page a {
@@ -93,15 +76,6 @@ background-size: cover;
  font-family: 'Monserrat', sans-serif;
 }
 
-/* body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  font-family: 'Montserrat', sans-serif;
-} */
 img {
     max-width: 100%;
     height: auto;
@@ -120,148 +94,12 @@ img {
   text-decoration: underline;
 }
 
-@media (min-width: 1920px) {
-  .wrapper {
-  height: 100vh;
-  width: 80%;
-  margin: auto;
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-}
-}
-
-@media (min-width: 1200px) and (max-width: 1919px) {
-  .wrapper {
-  height: 100vh;
-  width: 90%;
-  margin: auto;
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-}
-}
-
-@media (min-width: 992px) and (max-width: 1199px){
-  .wrapper {
-  height: 100vh;
-  width: 90%;
-  margin: auto;
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-}
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .wrapper {
-  height: 100vh;
-  width: 90%;
-  margin: auto;
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-}
-}
-
-@media (max-width: 480px) {
-  .wrapper {
-  height: 100%;
-  width: 70%;
-  margin-top: 15%;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  display: flex;
-  /* justify-content: space-around; */
-  flex-direction: column;
-}
-}
-
-@media (min-width: 1920px) {
-  .card {
-  width: 260px;
-  height: 360px;
-  cursor: pointer;
-  position: relative;
-  top: 25%;
-}
-.card::after,
-.card::before {
-  content: '';
-  position: absolute;
-  border: 3px solid #FFF0F5;
-  opacity: 0;
-  left: -2px;
-  right: -2px;
-  top: -2px;
-  bottom: -2px;
-  border-radius: 10px;
-  animation: card 4s linear infinite;
-  box-shadow: 0 0 0 4px #6d99ab;
-}
-.card::after {
-  animation-delay: 0.5s;
-}
-
-@keyframes card {
-  0% {
-    transform: scale(1);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.05);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.1);
-    opacity: 0;
-  }
-}
-}
-
-@media (min-width: 1200px) and (max-width: 1919px) {
-  .card {
-  width: 260px;
-  height: 360px;
-  cursor: pointer;
-  position: relative;
-  top: 25%;
-  margin: 1%;
-}
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .card {
-  width: 260px;
-  height: 300px;
-  cursor: pointer;
-  position: relative;
-  top: 25%;
-  margin: 1%;
-}
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .card {
-  width: 260px;
-  height: 300px;
-  cursor: pointer;
-  position: relative;
-  top: 25%;
-  margin: 1%;
-}
-}
-
-@media (max-width: 480px) {
-  .card {
-  width: 260px;
-  height: 360px;
-  cursor: pointer;
-  position: relative;
-  top: 15%;
-  margin: 1%;
-}
+.card {
+width: 260px;
+height: 360px;
+cursor: pointer;
+position: relative;
+top: 25%;
 }
 
 .card:hover .front {
@@ -302,62 +140,479 @@ img {
   justify-content: center;
   text-align: center;
 }
-/* .front::after,
-.front::before {
-  content: '';
-  position: absolute;
-  border: 2px solid #32CD32;
+
+.card::after,
+.card::before {
+content: '';
+position: absolute;
+border: 3px solid #FFF0F5;
+opacity: 0;
+left: -2px;
+right: -2px;
+top: -2px;
+bottom: -2px;
+border-radius: 10px;
+animation: card 4s linear infinite;
+box-shadow: 0 0 0 4px #6d99ab;
+}
+.card::after {
+animation-delay: 0.5s;
+}
+
+@keyframes card {
+0% {
+  transform: scale(1);
   opacity: 0;
-  left: 10px;
-  right: 10px;
-  top: 10px;
-  bottom: 10px;
+}
+50% {
+  transform: scale(1.05);
+  opacity: 1;
+}
+100% {
+  transform: scale(1.1);
+  opacity: 0;
+}
+}
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+  header {
+  position: fixed;
+  top: 20px;
+  left: 40px;
+}
+
+.home_page a {
+  font-family: "Chinese Rocks Bold Cyrillic";
+  text-decoration: none;
+  color: #6d99ab;
+  font-size: 45px;
+  line-height: 1;
+}
+
+.home_page a:hover {
+  color: #947d32;
+  text-decoration: underline;
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+ font-family: 'Monserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.village_title a {
+  font-family: "Chinese Rocks Bold Cyrillic";
+  text-decoration: none;
+  color: #e68525;
+  font-size: 35px;
+  line-height: 1;
+}
+
+.village_title a:hover {
+  color: #d61532;
+  text-decoration: underline;
+}
+
+.wrapper {
+height: 100vh;
+width: 90%;
+margin: auto;
+position: relative;
+display: flex;
+justify-content: space-around;
+}
+
+.card {
+width: 260px;
+height: 360px;
+cursor: pointer;
+position: relative;
+top: 25%;
+margin: 1%;
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(0);
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: transform .5s ease;
   border-radius: 10px;
-  animation: pulse 1.5 linear infinite;
-}
-.front::after {
-  animation-delay: 1.25s;
+  background: linear-gradient(#D6D6D6, #F2F2F2);
 }
 
-@keyframes front {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.2);
-    opacity: 0;
-  }
-} */
+.front {
+  transform: perspective(600px) rotateY(0);
+}
 
-@media (min-width: 1920px){}
-@media (min-width: 1200px) and (max-width: 1919px){}
-@media (min-width: 992px) and (max-width: 1199px){}
+.front img {
+    width: 100%;
+    height: 100%;
+}
 
-@media (min-width: 768px) and (max-width: 991px){
-  .back  h1 {
-      color: #FFF;
+.back {
+  background: linear-gradient(#358525, #4edec6);
+  transform: perspective(600px) rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  header {
+  position: fixed;
+  top: 20px;
+  left: 40px;
+}
+
+.home_page a {
+  font-family: "Chinese Rocks Bold Cyrillic";
+  text-decoration: none;
+  color: #6d99ab;
+  font-size: 45px;
+  line-height: 1;
+}
+
+.home_page a:hover {
+  color: #947d32;
+  text-decoration: underline;
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+ font-family: 'Monserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.village_title a {
+  font-family: "Chinese Rocks Bold Cyrillic";
+  text-decoration: none;
+  color: #e68525;
+  font-size: 35px;
+  line-height: 1;
+}
+
+.village_title a:hover {
+  color: #d61532;
+  text-decoration: underline;
+}
+
+.wrapper {
+height: 100vh;
+width: 90%;
+margin: auto;
+position: relative;
+display: flex;
+justify-content: space-around;
+}
+
+.card {
+width: 260px;
+height: 300px;
+cursor: pointer;
+position: relative;
+top: 25%;
+margin: 1%;
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(0);
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: transform .5s ease;
+  border-radius: 10px;
+  background: linear-gradient(#D6D6D6, #F2F2F2);
+}
+
+.front {
+  transform: perspective(600px) rotateY(0);
+}
+
+.front img {
+    width: 100%;
+    height: 100%;
+}
+
+.back {
+  background: linear-gradient(#358525, #4edec6);
+  transform: perspective(600px) rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+  position: fixed;
+  top: 15px;
+  left: 40px;
+}
+
+.home_page a {
+  font-family: "Chinese Rocks Bold Cyrillic";
+  text-decoration: none;
+  color: #6d99ab;
+  font-size: 45px;
+  line-height: 1;
+}
+
+.home_page a:hover {
+  color: #947d32;
+  text-decoration: underline;
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+ font-family: 'Monserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.village_title a {
+  font-family: "Chinese Rocks Bold Cyrillic";
+  text-decoration: none;
+  color: #e68525;
+  font-size: 35px;
+  line-height: 1;
+}
+
+.village_title a:hover {
+  color: #d61532;
+  text-decoration: underline;
+}
+
+.wrapper {
+height: 100vh;
+width: 90%;
+margin: auto;
+position: relative;
+display: flex;
+justify-content: space-around;
+}
+
+.card {
+width: 260px;
+height: 300px;
+cursor: pointer;
+position: relative;
+top: 25%;
+margin: 1%;
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(0);
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: transform .5s ease;
+  border-radius: 10px;
+  background: linear-gradient(#D6D6D6, #F2F2F2);
+}
+
+.front {
+  transform: perspective(600px) rotateY(0);
+}
+
+.front img {
+    width: 100%;
+    height: 100%;
+}
+
+.back {
+  background: linear-gradient(#358525, #4edec6);
+  transform: perspective(600px) rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.back  h1 {
+    color: #FFF;
+    font-size: 10px;
+}
+
+.back  span {
+    color: #FFF;
+    font-size: 12px;
+}
+
+.back h1 span {
+      display: block;
       font-size: 10px;
-  }
-
-  .back  span {
-      color: #FFF;
-      font-size: 12px;
-  }
-
-  .back h1 span {
-        display: block;
-        font-size: 10px;
-        font-weight: 200;
-        margin: 10px 10px 10px;
-        padding: 1%;
-  }
+      font-weight: 200;
+      margin: 10px 10px 10px;
+      padding: 1%;
+}
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
+  header {
+  position: static;
+  margin-top: 20px;
+  margin-left: 20px;
+  /* margin: 1.5%; */
+}
+
+.home_page a {
+  font-family: "Chinese Rocks Bold Cyrillic";
+  text-decoration: none;
+  color: #6d99ab;
+  font-size: 45px;
+  line-height: 1;
+}
+
+.home_page a:hover {
+  color: #947d32;
+  text-decoration: underline;
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+ font-family: 'Monserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.village_title a {
+  font-family: "Chinese Rocks Bold Cyrillic";
+  text-decoration: none;
+  color: #e68525;
+  font-size: 35px;
+  line-height: 1;
+}
+
+.village_title a:hover {
+  color: #d61532;
+  text-decoration: underline;
+}
+
+.wrapper {
+height: 100%;
+width: 70%;
+margin-top: 15%;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+display: flex;
+/* justify-content: space-around; */
+flex-direction: column;
+}
+
+.card {
+width: 260px;
+height: 360px;
+cursor: pointer;
+position: relative;
+top: 15%;
+margin: 1%;
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(0);
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: transform .5s ease;
+  border-radius: 10px;
+  background: linear-gradient(#D6D6D6, #F2F2F2);
+}
+
+.front {
+  transform: perspective(600px) rotateY(0);
+}
+
+.front img {
+    width: 100%;
+    height: 100%;
+}
+
+.back {
+  background: linear-gradient(#358525, #4edec6);
+  transform: perspective(600px) rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .back  h1 {
     color: #FFF;
     font-size: 16px;
@@ -375,6 +630,7 @@ img {
       margin: 10px 10px 10px;
 }
 }
+
 /*.map {
     position: relative;
 }
