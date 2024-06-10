@@ -277,6 +277,39 @@ margin: 1%;
   justify-content: center;
   text-align: center;
 }
+
+.card::after,
+.card::before {
+content: '';
+position: absolute;
+border: 3px solid #FFF0F5;
+opacity: 0;
+left: -2px;
+right: -2px;
+top: -2px;
+bottom: -2px;
+border-radius: 10px;
+animation: card 2s linear infinite;
+box-shadow: 0 0 0 4px #6d99ab;
+}
+.card::after {
+animation-delay: 0.5s;
+}
+
+@keyframes card {
+0% {
+  transform: scale(1);
+  opacity: 0;
+}
+50% {
+  transform: scale(1.03);
+  opacity: 1;
+}
+100% {
+  transform: scale(1.05);
+  opacity: 0;
+}
+}
 }
 
 
@@ -336,8 +369,8 @@ justify-content: space-around;
 }
 
 .card {
-width: 260px;
-height: 300px;
+width: 185px;
+height: 256px;
 cursor: pointer;
 position: relative;
 top: 25%;
@@ -381,6 +414,39 @@ margin: 1%;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.card::after,
+.card::before {
+content: '';
+position: absolute;
+border: 3px solid #FFF0F5;
+opacity: 0;
+left: -2px;
+right: -2px;
+top: -2px;
+bottom: -2px;
+border-radius: 10px;
+animation: card 2s linear infinite;
+box-shadow: 0 0 0 4px #6d99ab;
+}
+.card::after {
+animation-delay: 0.5s;
+}
+
+@keyframes card {
+0% {
+  transform: scale(1);
+  opacity: 0;
+}
+50% {
+  transform: scale(1.03);
+  opacity: 1;
+}
+100% {
+  transform: scale(1.05);
+  opacity: 0;
+}
 }
 }
 
@@ -440,11 +506,11 @@ justify-content: space-around;
 }
 
 .card {
-width: 260px;
-height: 300px;
+width: 145px;
+height: 200px;
 cursor: pointer;
 position: relative;
-top: 25%;
+top: 30%;
 margin: 1%;
 }
 
@@ -503,6 +569,39 @@ margin: 1%;
       font-weight: 200;
       margin: 10px 10px 10px;
       padding: 1%;
+}
+
+.card::after,
+.card::before {
+content: '';
+position: absolute;
+border: 3px solid #FFF0F5;
+opacity: 0;
+left: -1px;
+right: -1px;
+top: -1px;
+bottom: -1px;
+border-radius: 10px;
+animation: card 2s linear infinite;
+box-shadow: 0 0 0 4px #6d99ab;
+}
+.card::after {
+animation-delay: 0.5s;
+}
+
+@keyframes card {
+0% {
+  transform: scale(1);
+  opacity: 0;
+}
+50% {
+  transform: scale(1.03);
+  opacity: 1;
+}
+100% {
+  transform: scale(1.05);
+  opacity: 0;
+}
 }
 }
 
@@ -571,7 +670,7 @@ height: 360px;
 cursor: pointer;
 position: relative;
 top: 15%;
-margin: 1%;
+margin: 4%;
 }
 
 .card:hover .front {
@@ -628,6 +727,39 @@ margin: 1%;
       /* font-size: 16px; */
       font-weight: 200;
       margin: 10px 10px 10px;
+}
+
+.card::after,
+.card::before {
+content: '';
+position: absolute;
+border: 3px solid #FFF0F5;
+opacity: 0;
+left: -1px;
+right: -1px;
+top: -1px;
+bottom: -1px;
+border-radius: 10px;
+animation: card 2s linear infinite;
+box-shadow: 0 0 0 4px #6d99ab;
+}
+.card::after {
+animation-delay: 0.5s;
+}
+
+@keyframes card {
+0% {
+  transform: scale(1);
+  opacity: 0;
+}
+50% {
+  transform: scale(1.03);
+  opacity: 1;
+}
+100% {
+  transform: scale(1.05);
+  opacity: 0;
+}
 }
 }
 
