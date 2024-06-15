@@ -88,6 +88,9 @@ img {
   font-size: 35px;
   line-height: 1;
 }
+span {
+    font-size: 0.9vw;
+}
 
 .village_title a:hover {
   color: #d61532;
@@ -216,6 +219,10 @@ img {
   line-height: 1;
 }
 
+span {
+    font-size: 0.9vw;
+}
+
 .village_title a:hover {
   color: #d61532;
   text-decoration: underline;
@@ -312,7 +319,6 @@ animation-delay: 0.5s;
 }
 }
 
-
 @media (min-width: 992px) and (max-width: 1199px) {
   header {
   position: fixed;
@@ -350,8 +356,12 @@ img {
   font-family: "Chinese Rocks Bold Cyrillic";
   text-decoration: none;
   color: #e68525;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 1;
+}
+
+span {
+    font-size: 0.9vw;
 }
 
 .village_title a:hover {
@@ -487,13 +497,18 @@ img {
   font-family: "Chinese Rocks Bold Cyrillic";
   text-decoration: none;
   color: #e68525;
-  font-size: 35px;
+  font-size: 25px;
   line-height: 1;
 }
 
 .village_title a:hover {
   color: #d61532;
   text-decoration: underline;
+}
+
+span {
+    font-size: 0.9vw;
+    padding: 5%;
 }
 
 .wrapper {
@@ -553,7 +568,7 @@ margin: 1%;
   text-align: center;
 }
 
-.back  h1 {
+/* .back  h1 {
     color: #FFF;
     font-size: 10px;
 }
@@ -569,7 +584,7 @@ margin: 1%;
       font-weight: 200;
       margin: 10px 10px 10px;
       padding: 1%;
-}
+} */
 
 .card::after,
 .card::before {
@@ -647,6 +662,11 @@ img {
   line-height: 1;
 }
 
+span {
+    font-size: 4vw;
+    padding: 5%;
+}
+
 .village_title a:hover {
   color: #d61532;
   text-decoration: underline;
@@ -712,7 +732,7 @@ margin: 4%;
   text-align: center;
 }
 
-.back  h1 {
+/* .back  h1 {
     color: #FFF;
     font-size: 16px;
 }
@@ -724,10 +744,10 @@ margin: 4%;
 
 .back h1 span {
       display: block;
-      /* font-size: 16px; */
+      /* font-size: 16px;
       font-weight: 200;
       margin: 10px 10px 10px;
-}
+} */
 
 .card::after,
 .card::before {
