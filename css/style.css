@@ -25,6 +25,8 @@ background-attachment: fixed;
 -o-background-size: cover;
 background-size: cover;
 }
+@media (min-width: 1920px) {
+
 .face{
   font-family: "Chinese Rocks Bold Cyrillic";
   margin-left: auto;
@@ -117,4 +119,395 @@ background-size: cover;
         opacity: 1;
         transform: translateY(0px);
     }
+}
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+
+  .face{
+    font-family: "Chinese Rocks Bold Cyrillic";
+    margin-left: auto;
+    margin-right: auto;
+    width: center;
+    text-align: center;
+    color: #7196d1;
+    font-size: 150px;
+    position: relative;
+    margin-top: 200pt;
+    line-height: 1.64;
+  }
+
+  .navbar {
+    display: flex;
+    position: relative;
+    top: 5pt;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .btn:link,
+  .btn:visited {
+    font-family: "Sevilla Decor";
+    text-decoration: none;
+    font-size: 3vw;
+    color: #ffffff;
+    margin-left: 4%;
+    margin-right: 4%;
+    border-radius: 100px;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+  }
+
+  .btn:hover {
+      color: #7196d1;
+      background-color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-scnd {
+      /* background-color: #fff; */
+      color: #777;
+  }
+
+  .btn::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .4s;
+  }
+
+  .btn-scnd::after {
+    border: 3px solid currentColor;
+    /* background-color: #fff; */
+  }
+
+  .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+  }
+
+  .btn-animated {
+      animation: moveInBottom 5s ease-out;
+      animation-fill-mode: backwards;
+  }
+
+  @keyframes moveInBottom {
+      0% {
+          opacity: 0;
+          transform: translateY(30px);
+      }
+
+      100% {
+          opacity: 1;
+          transform: translateY(0px);
+      }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .face{
+    font-family: "Chinese Rocks Bold Cyrillic";
+    margin-left: auto;
+    margin-right: auto;
+    width: center;
+    text-align: center;
+    color: #7196d1;
+    font-size: 130px;
+    position: relative;
+    margin-top: 130pt;
+    line-height: 1.64;
+  }
+
+  .navbar {
+    display: flex;
+    position: relative;
+    top: 5pt;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .btn:link,
+  .btn:visited {
+    font-family: "Sevilla Decor";
+    text-decoration: none;
+    font-size: 3vw;
+    color: #ffffff;
+    margin-left: 4%;
+    margin-right: 4%;
+    border-radius: 100px;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+  }
+
+  .btn:hover {
+      color: #7196d1;
+      background-color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-scnd {
+      /* background-color: #fff; */
+      color: #777;
+  }
+
+  .btn::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .4s;
+  }
+
+  .btn-scnd::after {
+    border: 3px solid currentColor;
+    /* background-color: #fff; */
+  }
+
+  .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+  }
+
+  .btn-animated {
+      animation: moveInBottom 5s ease-out;
+      animation-fill-mode: backwards;
+  }
+
+  @keyframes moveInBottom {
+      0% {
+          opacity: 0;
+          transform: translateY(30px);
+      }
+
+      100% {
+          opacity: 1;
+          transform: translateY(0px);
+      }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .face{
+    font-family: "Chinese Rocks Bold Cyrillic";
+    margin-left: auto;
+    margin-right: auto;
+    width: center;
+    text-align: center;
+    color: #7196d1;
+    font-size: 100px;
+    position: relative;
+    margin-top: 180pt;
+    line-height: 1.64;
+  }
+
+  .navbar {
+    display: flex;
+    position: relative;
+    top: 5pt;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .btn:link,
+  .btn:visited {
+    font-family: "Sevilla Decor";
+    text-decoration: none;
+    font-size: 3vw;
+    color: #ffffff;
+    margin-left: 4%;
+    margin-right: 4%;
+    border-radius: 100px;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+  }
+
+  .btn:hover {
+      color: #7196d1;
+      background-color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-scnd {
+      /* background-color: #fff; */
+      color: #777;
+  }
+
+  .btn::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .4s;
+  }
+
+  .btn-scnd::after {
+    border: 3px solid currentColor;
+    /* background-color: #fff; */
+  }
+
+  .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+  }
+
+  .btn-animated {
+      animation: moveInBottom 5s ease-out;
+      animation-fill-mode: backwards;
+  }
+
+  @keyframes moveInBottom {
+      0% {
+          opacity: 0;
+          transform: translateY(30px);
+      }
+
+      100% {
+          opacity: 1;
+          transform: translateY(0px);
+      }
+  }
+}
+
+@media (max-width: 480px) {
+
+  .face{
+    font-family: "Chinese Rocks Bold Cyrillic";
+    margin-left: auto;
+    margin-right: auto;
+    width: center;
+    text-align: center;
+    color: #7196d1;
+    font-size: 20vw;
+    position: relative;
+    margin-top: 210pt;
+    line-height: 1.64;
+  }
+
+  .navbar {
+    display: flex;
+    position: relative;
+    top: 10pt;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .btn:link,
+  .btn:visited {
+    font-family: "Sevilla Decor";
+    text-decoration: none;
+    font-size: 9vw;
+    color: #ffffff;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 8%;
+    margin-bottom: 4%;
+    border-radius: 100px;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+  }
+
+  .btn:hover {
+      color: #7196d1;
+      background-color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-scnd {
+      /* background-color: #fff; */
+      color: #777;
+  }
+
+  .btn::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .4s;
+  }
+
+  .btn-scnd::after {
+    border: 3px solid currentColor;
+    /* background-color: #fff; */
+  }
+
+  .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+  }
+
+  .btn-animated {
+      animation: moveInBottom 5s ease-out;
+      animation-fill-mode: backwards;
+  }
+
+  @keyframes moveInBottom {
+      0% {
+          opacity: 0;
+          transform: translateY(30px);
+      }
+
+      100% {
+          opacity: 1;
+          transform: translateY(0px);
+      }
+  }
 }
