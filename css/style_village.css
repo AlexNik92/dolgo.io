@@ -18,17 +18,19 @@
   font-family: Caviar Dreams;
   src: url(../font/Caviar_Dreams.ttf);
 }
-html {
-background-image: url(../images/village_screen.png);
-background-repeat: no-repeat;
-background-position: center center;
-background-attachment: fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-}
+
 @media (min-width: 1920px){
+
+html {
+  background-image: url(../images/village_screen.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
 
 header {
   position: fixed;
@@ -153,6 +155,18 @@ ul li:hover {
 }
 
 @media (min-width: 1200px) and (max-width: 1919px) {
+
+html {
+  background-image: url(../images/village_screen.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
   header {
     position: fixed;
     top: 20px;
@@ -280,6 +294,18 @@ ul li:hover {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+
+html {
+  background-image: url(../images/village_screen_992-1199.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
   header {
     position: static;
     margin-top: 30px;
@@ -408,6 +434,18 @@ ul li:hover {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
+html {
+    background-image: url(../images/village_screen_768-991.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
   header {
     position: static;
     margin-top: 30px;
@@ -535,6 +573,18 @@ ul li:hover {
 }
 
 @media (max-width: 480px) {
+
+html {
+      background-image: url(../images/village_screen_mobile.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      }
+
   header {
   position: static;
   margin-top: 20px;
