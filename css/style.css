@@ -15,17 +15,19 @@
   src: url(../font/Sevilla_Decor.ttf);
 }
 
-html {
-background-image: url(../images/firstscreen.JPG);
-background-repeat: no-repeat;
-background-position: center center;
-background-attachment: fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-}
+
 @media (min-width: 1920px) {
+
+  html {
+  background-image: url(../images/firstscreen.JPG);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
 
 .face{
   font-family: "Chinese Rocks Bold Cyrillic";
@@ -124,6 +126,17 @@ background-size: cover;
 
 @media (min-width: 1200px) and (max-width: 1919px) {
 
+  html {
+  background-image: url(../images/firstscreen.JPG);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
   .face{
     font-family: "Chinese Rocks Bold Cyrillic";
     margin-left: auto;
@@ -220,6 +233,17 @@ background-size: cover;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+
+  html {
+  background-image: url(../images/firstscreen_992-1199.JPG);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
 
   .face{
     font-family: "Chinese Rocks Bold Cyrillic";
@@ -318,6 +342,17 @@ background-size: cover;
 
 @media (min-width: 768px) and (max-width: 991px) {
 
+  html {
+  background-image: url(../images/firstscreen_768-991.JPG);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
   .face{
     font-family: "Chinese Rocks Bold Cyrillic";
     margin-left: auto;
@@ -414,6 +449,17 @@ background-size: cover;
 }
 
 @media (max-width: 480px) {
+
+  html {
+  background-image: url(../images/firstscreen_mobile.JPG);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
 
   .face{
     font-family: "Chinese Rocks Bold Cyrillic";
